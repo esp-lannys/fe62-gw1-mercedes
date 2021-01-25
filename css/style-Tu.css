@@ -4,19 +4,24 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
     background: #000;
     color: #fff;
     font-family: sans-serif;
 }
 
-.channels .container {
-    max-width: 1376px;
-    width: 100%;
+
+/* CHANNELS */
+
+.channels .container{
+    max-width: 1680px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .channels .channels__content .channels__item {
     margin-top: 30px;
+    padding: 0 10px;
 }
 
 .channels .channels__content .channels__item a img {
@@ -47,3 +52,79 @@ body {
     opacity: 1;
     height: 7px;
 }
+
+/* END OF CHANNELS */
+
+
+/* CATEGORY */
+
+.category {
+    margin: 0;
+    padding: 0;
+}
+
+.category__nav {
+    color: #fff;
+    width: 100%;
+}
+
+.category__nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 30px 20px 30px;
+}
+
+.category__nav ul li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+.category__nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: .8rem;
+    font-weight: 400;
+    padding: 8px 0;
+    position: relative;
+    transition: .5s;
+}
+
+.category__nav a:hover {
+    color: #00adef;
+}
+
+.category__nav ul li a i {
+    margin: 0 10px;
+}
+
+.category__nav .active {
+    color: #00adef;
+    border-bottom: 1px solid #00adef;
+}
+
+/* END OF CATEGORY */
+
+
+/* DESCRIPTION */
+
+.description .description__content {
+    font-size: 14px;
+    width: calc(100% - 60px);
+    margin: 0 auto;
+}
+
+.description .description__content span.spacer {
+    display: inline-block;
+    width: 20px;
+}
+
+.description .description__content div.spacer.large {
+    height: 1.5rem;
+}
+
+.description .description__content div.spacer.huge {
+    height: 2.5rem;
+}
+
+/* END OF DESCRIPTION */
