@@ -1,1 +1,75 @@
 // Style for category
+.category {
+    margin: 3rem 0;
+    .category__content {
+        .category__nav {
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                list-style: none;
+                text-align: center;
+                margin-bottom: 3rem;
+                li {
+                    margin-right: $mg-2;
+                    a {
+                        text-decoration: none;
+                        padding-bottom: $pd-1;
+                        @include text($color-white, $fs-0 - 2, $fw-normal);
+                        i {
+                            margin-right: $mg-1 + 5;
+                        }
+                        transition: all .5s;
+                        &:hover {
+                            color: $color-blue-1;
+                        }
+                    }
+                    .active {
+                        @include text($color-blue-1, $fs-0 - 2, $fw-normal);
+                        border-bottom: 1px solid $color-blue-1;
+                    }
+                }
+            }
+        }
+        .category__list {
+            .category__item {
+                position: relative;
+                cursor: pointer;
+                img {
+                    width: 100%;
+                }
+                .category__detail {
+                    display: block;
+                    width: 100%;
+                    height: 50px;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    background: rgba(0, 0, 0, 0.35);
+                    padding: 13px 31px;
+                    overflow: hidden;
+                    h1 {
+                        margin-bottom: $mg-1;
+                        @include text($color-white, $fs-2 + 2, $fw-normal);
+                        line-height: 24px;
+                    }
+                    p {
+                        display: none;
+                        transition: all .5s ease-in-out;
+
+                    }
+                }
+                transition: all .5s;
+                &:hover {
+                    .category__detail {
+                        height: 100px;
+                        overflow: visible;
+                        p {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

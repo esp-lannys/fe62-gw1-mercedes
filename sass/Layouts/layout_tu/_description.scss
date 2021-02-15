@@ -1,1 +1,25 @@
 // Style for description
+.description {
+    .description__content {
+        @include text($color-white, $fs-1, $fw-normal);
+        width: calc(100% - 60px);
+        margin: auto;
+        .description__intro {
+            margin-bottom: $mg-0;
+            nobr {
+                margin-right: $mg-2;
+            }
+            span.spacer {
+                display: inline-block;
+                width: 20px;
+            }
+            .spacer-large {
+                height: 1.5rem;
+                width: 100%;
+            }
+        }
+        p {
+            margin-bottom: 1rem;
+        }
+    }
+}
