@@ -1,6 +1,7 @@
 // Style for category
 .category {
-    margin: 3rem 0;
+    max-width: 1200px;
+    margin: 3rem auto;
     .category__content {
         .category__nav {
             ul {
@@ -9,17 +10,18 @@
                 justify-content: center;
                 list-style: none;
                 text-align: center;
-                margin-bottom: 3rem;
+                margin-bottom: 2rem;
+                margin-top: 5rem;
                 li {
                     margin-right: $mg-2;
                     a {
                         text-decoration: none;
                         padding-bottom: $pd-1;
-                        @include text($color-white, $fs-0 - 2, $fw-normal);
+                        @include text($color-white, $fs-0, $fw-normal);
                         i {
                             margin-right: $mg-1 + 5;
                         }
-                        transition: all .5s;
+                        transition: all 0.5s;
                         &:hover {
                             color: $color-blue-1;
                         }
@@ -32,11 +34,20 @@
             }
         }
         .category__list {
+            .show-more {
+                display: none;
+            }
             .category__item {
                 position: relative;
                 cursor: pointer;
+                border: 1px solid $color-black-1;
+                max-height: 100%;
                 img {
                     width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-style: none;
+                    vertical-align: middle;
                 }
                 .category__detail {
                     display: block;
@@ -46,26 +57,71 @@
                     bottom: 0;
                     left: 0;
                     background: rgba(0, 0, 0, 0.35);
-                    padding: 13px 31px;
+                    padding: $pd-1 $pd-2;
                     overflow: hidden;
+                    transition: .8s;
                     h1 {
                         margin-bottom: $mg-1;
-                        @include text($color-white, $fs-2 + 2, $fw-normal);
+                        @include text($color-white, $fs-2, $fw-normal);
                         line-height: 24px;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
                     }
                     p {
-                        display: none;
-                        transition: all .5s ease-in-out;
-
+                        transition: .8s;
+                        opacity: 0;
+                        @include text($color-white, $fs-0, $fw-normal);
                     }
                 }
-                transition: all .5s;
                 &:hover {
                     .category__detail {
-                        height: 100px;
                         overflow: visible;
+                        height: 120px;
+                        background: rgba(0, 0, 0, 0.70);
                         p {
-                            display: block;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+            .btn-show {
+                margin: 2rem 0;;
+                text-align: center;
+                button {
+                    background: linear-gradient(#303030,#202020)!important;
+                    color: #999!important;
+                    @include button(transparent, $color-black-3, $pd-0, $pd-2, $border-radius);
+                    text-align: center;
+                    transition: .5s;
+                    i {
+                        margin-right: $mg-0;
+                    }
+                    &:hover {
+                        @include buttonHover(transparent, $color-white!important, $color-black-3);
+                    }
+                    &:focus {
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include responsive('medium') {
+    .category{
+        .category__content {
+            .category__list {
+                .category__item {
+                    position: unset;
+                    .category__detail {
+                        height: 40px;
+                        position: unset;
+                        display: block;
+                        width: 100%;
+                        transform: translateY(0);
+                        p {
+                            display: none;
                         }
                     }
                 }

@@ -1,9 +1,14 @@
 // Style for channels
 
 .channels {
+    .container {
+        max-width: 1180px!important;
+    }
     .channels__content {
+        margin: 0 auto;
         .channels__item {
-            padding: 0 $pd-1;
+            margin-bottom: $mg-1;
+            padding-right: $pd-1;
             a {
                 position: relative;
                 display: block;

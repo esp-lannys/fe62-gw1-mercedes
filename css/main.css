@@ -12,7 +12,8 @@ html, body {
 }
 
 .category {
-  margin: 3rem 0;
+  max-width: 1200px;
+  margin: 3rem auto;
 }
 
 .category .category__content .category__nav ul {
@@ -27,7 +28,8 @@ html, body {
           justify-content: center;
   list-style: none;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+  margin-top: 5rem;
 }
 
 .category .category__content .category__nav ul li {
@@ -38,10 +40,10 @@ html, body {
   text-decoration: none;
   padding-bottom: 10px;
   color: #fff;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: normal;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .category .category__content .category__nav ul li a i {
@@ -59,15 +61,24 @@ html, body {
   border-bottom: 1px solid #00adef;
 }
 
+.category .category__content .category__list .show-more {
+  display: none;
+}
+
 .category .category__content .category__list .category__item {
   position: relative;
   cursor: pointer;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  border: 1px solid #000;
+  max-height: 100%;
 }
 
 .category .category__content .category__list .category__item img {
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-style: none;
+  vertical-align: middle;
 }
 
 .category .category__content .category__list .category__item .category__detail {
@@ -78,35 +89,102 @@ html, body {
   bottom: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.35);
-  padding: 13px 31px;
+  padding: 10px 20px;
   overflow: hidden;
+  -webkit-transition: .8s;
+  transition: .8s;
 }
 
 .category .category__content .category__list .category__item .category__detail h1 {
   margin-bottom: 10px;
   color: #fff;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: normal;
   line-height: 24px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .category .category__content .category__list .category__item .category__detail p {
-  display: none;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: .8s;
+  transition: .8s;
+  opacity: 0;
+  color: #fff;
+  font-size: 15px;
+  font-weight: normal;
 }
 
 .category .category__content .category__list .category__item:hover .category__detail {
-  height: 100px;
   overflow: visible;
+  height: 120px;
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .category .category__content .category__list .category__item:hover .category__detail p {
-  display: block;
+  opacity: 1;
+}
+
+.category .category__content .category__list .btn-show {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.category .category__content .category__list .btn-show button {
+  background: -webkit-gradient(linear, left top, left bottom, from(#303030), to(#202020)) !important;
+  background: linear-gradient(#303030, #202020) !important;
+  color: #999 !important;
+  background-color: transparent;
+  border: 1px solid #202020;
+  padding: 5px 20px;
+  border-radius: 2px;
+  text-align: center;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.category .category__content .category__list .btn-show button i {
+  margin-right: 2px;
+}
+
+.category .category__content .category__list .btn-show button:hover {
+  background-color: transparent;
+  color: #fff !important;
+  border-color: #202020;
+}
+
+.category .category__content .category__list .btn-show button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+@media screen and (max-width: 768px) {
+  .category .category__content .category__list .category__item {
+    position: unset;
+  }
+  .category .category__content .category__list .category__item .category__detail {
+    height: 40px;
+    position: unset;
+    display: block;
+    width: 100%;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .category .category__content .category__list .category__item .category__detail p {
+    display: none;
+  }
+}
+
+.channels .container {
+  max-width: 1180px !important;
+}
+
+.channels .channels__content {
+  margin: 0 auto;
 }
 
 .channels .channels__content .channels__item {
-  padding: 0 10px;
+  margin-bottom: 10px;
+  padding-right: 10px;
 }
 
 .channels .channels__content .channels__item a {
@@ -135,12 +213,14 @@ html, body {
   width: 100%;
 }
 
+.description {
+  margin-top: 5rem;
+}
+
 .description .description__content {
   color: #fff;
   font-size: 13px;
   font-weight: normal;
-  width: calc(100% - 60px);
-  margin: auto;
 }
 
 .description .description__content .description__intro {
