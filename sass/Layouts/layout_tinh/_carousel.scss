@@ -1,0 +1,125 @@
+.carousel {
+    .carousel-caption {
+        top: 50%;
+        left: 50%;
+        transform: translate(-110%, -89%);
+        text-align: left;
+        color: $color-white;
+        button {
+            width: 115px;
+            height: 37px;
+            background-color: #333333;
+            color: #fff;
+            border: none;
+            transform: translateY(15px);
+            &:hover {
+                background-color: #1f1f1f;
+            }
+        }
+        .carousel-caption__info{
+            transform: translateY(600%);
+            @include text($color-white, $fs-1, $fw-normal);
+        }
+    }
+
+    .carousel-caption__color{
+        color: $color-black-1;
+    }
+
+    .search-bar {
+        background-color: #141414;
+        .search-bar__detail {
+            display: flex;
+            height: 100px;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            form {
+                width: 100%;
+                input {
+                    background-color: #ececec;
+                    width: 100%;
+                    height: 2.855rem;
+                    padding: 0 10px;
+                    border: none;
+                }
+                button {
+                    background-color: #ececec;
+                    position: absolute;
+                    transform: translate(-200%, 45%);
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+//Responsive
+@include responsive("extra-large"){
+    .carousel-caption{
+        display: block!important;
+        // background-color: #fff;
+        top: 50%;
+        left: 50%;
+        transform: translate(-10%, -90%);
+        h1{
+            @include text($color-white, $fs-3 + 6, $fw-normal);
+        }
+    }
+    .carousel-caption__color{
+        h1{
+            color: $color-black-1!important;
+        }       
+    }
+}
+@include responsive("large"){
+    .carousel-caption{
+        display: block!important;
+        // background-color: #fff;
+        top: 50%;
+        left: 50%;
+        transform: translate(-10%, -90%);
+        h1{
+            @include text($color-white, $fs-2, $fw-normal);
+        }
+    }
+    .carousel-caption__color{
+        h1{
+            color: $color-black-1!important;
+        }       
+    }
+}
+@include responsive("medium"){
+    .carousel-caption{
+        display: block!important;
+        // background-color: #fff;
+        top: 50%;
+        left: 50%;
+        transform: translate(-10%, -90%);
+        h1{
+            @include text($color-white, $fs-3, $fw-normal);
+        }
+    }
+    .carousel-caption__color{
+        h1{
+            color: $color-black-1!important;
+        }       
+    }
+}
+@include responsive("small"){
+    .carousel-caption{
+        display: block!important;
+        // background-color: #fff;
+        top: 50%;
+        left: 50%;
+        transform: translate(-10%, -90%);
+        h1{
+            @include text($color-white, $fs-1, $fw-normal);
+        }
+    }
+    .carousel-caption__color{
+        h1{
+            color: $color-black-1!important;
+        }       
+    }
+}

@@ -1,0 +1,26 @@
+.intro {
+    .intro__content {
+        padding: 0;
+        .intro__detail {
+            padding: 6rem 0;
+            width: 100%;
+            text-align: left;
+            h2{
+                @include text($color-white, $fs-3, $fw-normal);
+            }
+            p{
+                @include text($color-white, $fs-1, $fw-normal);
+            }
+            button {
+                background-color: #00adef;
+                color: #fff;
+                height: 2.3rem;
+                padding: 0 10px;
+                border: 0;
+                &:hover{
+                    background-color: #006c95;
+                }
+            }
+        }
+    }
+}
