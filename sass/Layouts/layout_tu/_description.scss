@@ -1,6 +1,7 @@
 // Style for description
 .description {
-    margin-top: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     .description__content {
         @include text($color-white, $fs-1, $fw-normal);
         .description__intro {

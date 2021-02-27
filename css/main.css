@@ -218,7 +218,8 @@ html, body {
 }
 
 .description {
-  margin-top: 5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .description .description__content {
