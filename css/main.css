@@ -24,45 +24,16 @@ header {
   width: auto;
 }
 
-header .header-content {
-  display: flex;
-}
-
-header .header-content .header-content-brand {
-  width: 30%;
-}
-
-header .header-content .header-content-brand a {
-  text-decoration: none;
-}
-
-header .header-content .header-content-brand a .header-content-brand__logo {
-  top: 50%;
-  left: 50%;
-  transform: translate(20%, 35%);
-}
-
-header .header-content .header-content-brand a .header-content-brand__brand {
-  top: 50%;
-  left: 50%;
-  transform: translate(65%, 130%);
-}
-
-header .header-content .header-content-nav {
-  width: 70%;
-}
-
-header .header-content .header-content-nav .header-content-nav__language {
+header .header-content .header-content-provider {
   text-align: right;
-  line-height: 35px;
 }
 
-header .header-content .header-content-nav .header-content-nav__language a {
+header .header-content .header-content-provider a {
   text-decoration: none;
   color: #fff;
 }
 
-header .header-content .header-content-nav .header-content-nav__language a span .header-content-nav__language__i {
+header .header-content .header-content-provider a span .header-content-nav__language__i {
   font-family: Bodoni MT;
   color: #fff;
   font-size: 15px;
@@ -73,163 +44,100 @@ header .header-content .header-content-nav .header-content-nav__language a span 
   padding: 0 5px;
 }
 
-header .header-content .header-content-nav .header-content-nav__language a .header-content-nav__languageDe {
+header .header-content .header-content-provider a .header-content-nav__languageDe {
   padding-left: 40px;
 }
 
-header .header-content .header-content-nav .header-content-nav__language a:hover {
+header .header-content .header-content-provider a:hover {
   color: #0088c6;
 }
 
-header .header-content .header-content-nav .header-content-nav__language a:hover .header-content-nav__language__i {
+header .header-content .header-content-provider a:hover .header-content-nav__language__i {
   color: #0088c6;
   border: 2px solid #0088c6;
 }
 
-header .header-content .header-content-nav .header-content-nav__nav {
-  line-height: 75px;
-  max-width: fit-content;
-  padding-left: 140px;
-}
-
-header .header-content .header-content-nav .header-content-nav__nav .bg-dark {
+header .header-content .header-content-navbar .bg-dark {
   background-color: #000 !important;
   padding: 0;
 }
 
-header .header-content .header-content-nav .header-content-nav__nav .navbar-toggler {
+header .header-content .header-content-navbar .navbar-brand {
+  width: 38%;
+}
+
+header .header-content .header-content-navbar .navbar-brand .header-content-brand__logo {
+  transform: translate(20%, -15%);
+}
+
+header .header-content .header-content-navbar .navbar-brand .header-content-brand__brand {
+  transform: translate(60%, 5%);
+}
+
+header .header-content .header-content-navbar .navbar-toggler {
   border: none !important;
   padding: 0;
   color: #fff;
 }
 
-header .header-content .header-content-nav .header-content-nav__nav .navbar-collapse {
+header .header-content .header-content-navbar .navbar-collapse {
   text-align: center;
 }
 
-header .header-content .header-content-nav .header-content-nav__nav .collapse ul li {
+header .header-content .header-content-navbar .collapse ul {
+  line-height: 45px;
+}
+
+header .header-content .header-content-navbar .collapse ul li {
   margin: 0 18px;
 }
 
-header .header-content .header-content-nav .header-content-nav__nav .collapse ul li a {
+header .header-content .header-content-navbar .collapse ul li a {
   color: #fff;
 }
 
-header .header-content .header-content-nav .header-content-nav__nav .collapse ul li a:hover {
+header .header-content .header-content-navbar .collapse ul li a:hover {
   color: #0088c6;
 }
 
-header .header-content .header-content-nav .header-content-nav__nav .collapse ul li .nav-link {
+header .header-content .header-content-navbar .collapse ul li .nav-link {
   padding: 0;
 }
 
-header .header-content .header-content-nav .header-content-nav__nav .collapse ul .navbar-nav__search {
+header .header-content .header-content-navbar .collapse ul .navbar-nav__search {
   margin-right: 0;
 }
 
 @media screen and (max-width: 992px) {
-  .header-content-brand {
-    height: 80px;
+  header .navbar-brand {
+    height: 50px;
     width: 30% !important;
   }
-  .header-content-brand .header-content-brand__logo {
+  header .navbar-brand .header-content-brand__logo {
     width: 44px;
     height: 44px;
-    transform: translate(-50%, 40%) !important;
+    transform: translate(-50%, -25%) !important;
   }
-  .header-content-brand .header-content-brand__brand {
+  header .navbar-brand .header-content-brand__brand {
     height: 23px;
     width: 91px;
-    transform: translate(15%, 110%) !important;
+    transform: translate(15%, -20%) !important;
   }
-  .header-content-nav {
-    width: 70% !important;
-    transform: translateX(0%) !important;
-  }
-  .header-content-nav .header-content-nav__nav {
-    line-height: 50px !important;
-    justify-content: center;
-    align-self: center;
-  }
-  .header-content-nav .header-content-nav__nav button {
-    transform: translateX(1420%);
-  }
-  .header-content-nav .header-content-nav__nav .navbar-collapse {
-    transform: translateX(-30%);
-  }
-  .header-content-nav .header-content-nav__nav .navbar-collapse .navbar-nav .navbar-nav__search {
-    margin: 0 18px !important;
+  header .collapse .navbar-nav .navbar-nav__search {
+    margin: 0 auto !important;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .header-content-brand {
-    height: 80px;
-    width: 30% !important;
-  }
-  .header-content-brand .header-content-brand__logo {
-    width: 44px;
-    height: 44px;
-    transform: translate(-50%, 40%) !important;
-  }
-  .header-content-brand .header-content-brand__brand {
-    height: 23px;
-    width: 91px;
-    transform: translate(15%, 110%) !important;
-  }
-  .header-content-nav {
-    width: 70% !important;
-    transform: translateX(0%) !important;
-  }
-  .header-content-nav .header-content-nav__language span .header-content-nav__language__provider {
+  .header-content-nav__language span .header-content-nav__language__provider {
     display: none;
   }
-  .header-content-nav .header-content-nav__language .header-content-nav__languageDe {
+  .header-content-nav__language .header-content-nav__languageDe {
     padding-left: 20px !important;
   }
-  .header-content-nav .header-content-nav__nav {
-    line-height: 50px !important;
-    justify-content: center;
-    align-self: center;
-  }
-  .header-content-nav .header-content-nav__nav button {
-    transform: translateX(960%);
-  }
-  .header-content-nav .header-content-nav__nav .navbar-collapse {
-    transform: translateX(-50%);
-  }
-  .header-content-nav .header-content-nav__nav .navbar-collapse .navbar-nav .navbar-nav__search {
-    margin: 0 18px !important;
-  }
 }
 
-@media screen and (max-width: 576px) {
-  .header-content-brand {
-    height: 80px;
-    width: 50% !important;
-  }
-  .header-content-brand .header-content-brand__logo {
-    width: 44px;
-    height: 44px;
-  }
-  .header-content-nav__nav {
-    line-height: 50px !important;
-    width: 50% !important;
-    justify-content: center;
-    align-self: center;
-  }
-  .header-content-nav__nav button {
-    transform: translateX(360%) !important;
-  }
-  .header-content-nav__nav .navbar-collapse {
-    transform: translateX(-130%) !important;
-  }
-  .header-content-nav__nav .navbar-collapse .navbar-nav .navbar-nav__search {
-    margin: 0 18px !important;
-  }
-}
-
-.carousel .carousel-caption {
+.carousel .carousel-item .carousel-caption {
   top: 50%;
   left: 50%;
   transform: translate(-110%, -89%);
@@ -237,7 +145,7 @@ header .header-content .header-content-nav .header-content-nav__nav .collapse ul
   color: #fff;
 }
 
-.carousel .carousel-caption button {
+.carousel .carousel-item .carousel-caption button {
   width: 115px;
   height: 37px;
   background-color: #333333;
@@ -246,18 +154,18 @@ header .header-content .header-content-nav .header-content-nav__nav .collapse ul
   transform: translateY(15px);
 }
 
-.carousel .carousel-caption button:hover {
+.carousel .carousel-item .carousel-caption button:hover {
   background-color: #1f1f1f;
 }
 
-.carousel .carousel-caption .carousel-caption__info {
+.carousel .carousel-item .carousel-caption .carousel-caption__info {
   transform: translateY(600%);
   color: #fff;
   font-size: 13px;
   font-weight: normal;
 }
 
-.carousel .carousel-caption__color {
+.carousel .carousel-item .carousel-caption__color {
   color: #000;
 }
 
