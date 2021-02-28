@@ -240,6 +240,10 @@ html, body {
   margin-bottom: 1rem;
 }
 
+.topics {
+  margin-top: 3rem;
+}
+
 .topics .topics__content {
   margin: 0 !important;
 }
@@ -735,6 +739,46 @@ footer .footer-content .footer-content__footer .footer-content__footer__top a sp
 
 footer .footer-content .footer-content__footer .footer-content__footer__top a span:hover {
   color: #00adef;
+}
+
+footer .footer__cta {
+  position: fixed;
+  right: 0;
+  top: 40%;
+  z-index: 20;
+}
+
+footer .footer__cta ul li {
+  list-style: none;
+  background-color: #202020;
+  padding-left: 10px;
+  padding-right: 120px;
+  padding-top: 10px;
+  margin: 1px 0;
+  height: 44px;
+  cursor: pointer;
+  -webkit-transform: translateX(270px);
+          transform: translateX(270px);
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+footer .footer__cta ul li:hover {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+footer .footer__cta ul li a {
+  vertical-align: baseline;
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+footer .footer__cta ul li a i {
+  margin-right: 10px;
+  font-size: 24px;
 }
 
 @media screen and (max-width: 1200px) {

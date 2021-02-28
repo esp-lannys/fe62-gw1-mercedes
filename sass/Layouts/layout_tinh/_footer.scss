@@ -87,6 +87,40 @@ footer {
             }
         }
     }
+    /////////////////////// Tu
+    .footer__cta {
+        position: fixed;
+        right: 0;
+        top: 40%;
+        z-index: 20;
+        ul {
+            li {
+                list-style: none;
+                background-color: $color-black-3;
+                padding-left: $pd-1;
+                padding-right: 120px;
+                padding-top: $pd-1;
+                margin: 1px 0;
+                height: 44px;
+                cursor: pointer;
+                transform: translateX(270px);
+                transition: 0.8s;
+                &:hover {
+                    transform: translateX(0);
+                }
+                a {
+                    vertical-align: baseline;
+                    text-decoration: none;
+                    @include text($color-white, $fs-2 - 3, $fw-normal);
+                    i {
+                        margin-right: $mg-1;
+                        font-size: $fs-3;
+                    }
+                }
+            }
+        }
+    }
+    ///////////////////////
 }
 
 //Responsive
