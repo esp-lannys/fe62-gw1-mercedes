@@ -1,0 +1,46 @@
+.contact{
+    .contact-content{
+        hr{
+            border: 0;
+            border-top: 1px solid $color-gray-3!important;
+            margin: 30px -1px;
+        }
+        .contact-content__info{
+            p{
+                @include text($color-gray-1, $fs-0, $fw-normal);
+                margin-bottom: 1rem;
+            }
+            .contact-content__info__icon{
+                .icon__fb{
+                    margin-left: 0;
+                }
+                a{
+                    text-decoration: none;
+                    @include text($color-gray-1, $fs-3+4, $fw-normal);
+                    margin: 10px 16.66667px;
+                    &:hover{
+                        color: $color-blue-1;
+                    }
+                }
+            }
+        }
+        .col-12{
+            padding: 0;
+        }
+        .contact-content__brand{
+            .contact-content__brand__detail{
+                float: left;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                a{
+                    padding: 2rem 0;
+                    img{
+                        height: 2em;
+                    }
+                }
+            }
+        }
+        
+    }
+}
