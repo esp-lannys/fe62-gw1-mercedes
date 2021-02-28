@@ -1,0 +1,156 @@
+footer {
+    .footer-content {
+        .footer-content__info {
+            p {
+                @include text($color-gray-1, $fs-1, $fw-normal);
+                a {
+                    text-decoration: none;
+                    @include text($color-white, $fs-1, $fw-normal);
+                    &:hover {
+                        color: $color-blue-1;
+                    }
+                }
+            }
+        }
+        .space-huge{
+            height: 2.5rem;
+        }
+        .footer-content__footer {
+            .footer__float {
+                float: left;
+            }
+            .footer-content__footer__language {
+                span {
+                    a {
+                        text-decoration: none;
+                        @include text($color-white, $fs-0, $fw-normal);
+                        &:hover {
+                            color: $color-blue-1;
+                        }
+                    }
+                    .default {
+                        color: $color-blue-1;
+                    }
+                }
+            }
+            .footer-content__footer__list {
+                .list__float {
+                    float: left;
+                    padding: 0;
+                }
+                .footer-content__footer__list__provider {
+                    text-align: right;
+                    ul {
+                        li {
+                            list-style-type: none;
+                            display: inline-block;
+                            a {
+                                text-decoration: none;
+                                @include text($color-gray-1, $fs-1, $fw-normal);
+                                padding: 0 9px;
+                                &:hover {
+                                    color: $color-blue-1;
+                                }
+                            }
+                        }
+                    }
+                }
+                .footer-content__footer__list__newfeeds {
+                    ul {
+                        li {
+                            list-style-type: none;
+                            display: inline-block;
+                            a {
+                                text-decoration: none;
+                                @include text($color-gray-1, $fs-1, $fw-normal);
+                                padding: 0 10px;
+                                &:hover {
+                                    color: $color-blue-1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .footer-content__footer__top {
+                text-align: right;
+                a {
+                    text-decoration: none;
+                    span{
+                        @include text($color-gray-1, $fs-1, $fw-normal);
+                        &:hover {
+                            color: $color-blue-1;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+//Responsive
+@include responsive("extra-large"){
+    .footer-content__footer{
+        .footer-content__footer__list{
+            .footer-content__footer__list__newfeeds{
+                text-align: right;
+            }
+        }
+    }
+}
+@include responsive("large"){
+    .footer-content__footer{
+        .footer-content__footer__list{
+            .footer-content__footer__list__provider{
+                text-align: left!important;
+                ul{
+                    .hide{
+                        a{
+                            padding-left: 0!important;
+                        }                       
+                    }
+                }
+            }
+            .footer-content__footer__list__newfeeds{
+                text-align: left;
+                ul{
+                    .hide{
+                        a{
+                            padding-left: 0!important;
+                        }                       
+                    }
+                }
+            }
+        }
+    }
+}
+@include responsive("medium"){
+    .footer-content__info{
+        text-align: center;
+    }
+    .footer-content__footer{
+        .footer-content__footer__list{
+            .footer-content__footer__list__provider{
+                text-align: left!important;
+                ul{
+                    .hide{
+                        a{
+                            padding-left: 0!important;
+                        }                       
+                    }
+                }
+            }
+            .footer-content__footer__list__newfeeds{
+                text-align: left;
+                ul{
+                    .hide{
+                        a{
+                            padding-left: 0!important;
+                        } 
+                    }
+                }
+            }
+        }
+    }
+}

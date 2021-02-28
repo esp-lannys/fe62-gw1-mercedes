@@ -301,4 +301,192 @@ header .header-content .header-content-navbar .collapse ul .navbar-nav__search {
 .intro .intro__content .intro__detail button:hover {
   background-color: #006c95;
 }
+
+.contact .contact-content hr {
+  border: 0;
+  border-top: 1px solid #333 !important;
+  margin: 30px -1px;
+}
+
+.contact .contact-content .contact-content__info p {
+  color: #999;
+  font-size: 15px;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+.contact .contact-content .contact-content__info .contact-content__info__icon .icon__fb {
+  margin-left: 0;
+}
+
+.contact .contact-content .contact-content__info .contact-content__info__icon a {
+  text-decoration: none;
+  color: #999;
+  font-size: 28px;
+  font-weight: normal;
+  margin: 10px 16.66667px;
+}
+
+.contact .contact-content .contact-content__info .contact-content__info__icon a:hover {
+  color: #00adef;
+}
+
+.contact .contact-content .col-12 {
+  padding: 0;
+}
+
+.contact .contact-content .contact-content__brand .contact-content__brand__detail {
+  float: left;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.contact .contact-content .contact-content__brand .contact-content__brand__detail a {
+  padding: 2rem 0;
+}
+
+.contact .contact-content .contact-content__brand .contact-content__brand__detail a img {
+  height: 2em;
+}
+
+footer .footer-content .footer-content__info p {
+  color: #999;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+footer .footer-content .footer-content__info p a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+footer .footer-content .footer-content__info p a:hover {
+  color: #00adef;
+}
+
+footer .footer-content .space-huge {
+  height: 2.5rem;
+}
+
+footer .footer-content .footer-content__footer .footer__float {
+  float: left;
+}
+
+footer .footer-content .footer-content__footer .footer-content__footer__language span a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+footer .footer-content .footer-content__footer .footer-content__footer__language span a:hover {
+  color: #00adef;
+}
+
+footer .footer-content .footer-content__footer .footer-content__footer__language span .default {
+  color: #00adef;
+}
+
+footer .footer-content .footer-content__footer .footer-content__footer__list .list__float {
+  float: left;
+  padding: 0;
+}
+
+footer .footer-content .footer-content__footer .footer-content__footer__list .footer-content__footer__list__provider {
+  text-align: right;
+}
+
+footer .footer-content .footer-content__footer .footer-content__footer__list .footer-content__footer__list__provider ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+footer .footer-content .footer-content__footer .footer-content__footer__list .footer-content__footer__list__provider ul li a {
+  text-decoration: none;
+  color: #999;
+  font-size: 13px;
+  font-weight: normal;
+  padding: 0 9px;
+}
+
+footer .footer-content .footer-content__footer .footer-content__footer__list .footer-content__footer__list__provider ul li a:hover {
+  color: #00adef;
+}
+
+footer .footer-content .footer-content__footer .footer-content__footer__list .footer-content__footer__list__newfeeds ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+footer .footer-content .footer-content__footer .footer-content__footer__list .footer-content__footer__list__newfeeds ul li a {
+  text-decoration: none;
+  color: #999;
+  font-size: 13px;
+  font-weight: normal;
+  padding: 0 10px;
+}
+
+footer .footer-content .footer-content__footer .footer-content__footer__list .footer-content__footer__list__newfeeds ul li a:hover {
+  color: #00adef;
+}
+
+footer .footer-content .footer-content__footer .footer-content__footer__top {
+  text-align: right;
+}
+
+footer .footer-content .footer-content__footer .footer-content__footer__top a {
+  text-decoration: none;
+}
+
+footer .footer-content .footer-content__footer .footer-content__footer__top a span {
+  color: #999;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+footer .footer-content .footer-content__footer .footer-content__footer__top a span:hover {
+  color: #00adef;
+}
+
+@media screen and (max-width: 1200px) {
+  .footer-content__footer .footer-content__footer__list .footer-content__footer__list__newfeeds {
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .footer-content__footer .footer-content__footer__list .footer-content__footer__list__provider {
+    text-align: left !important;
+  }
+  .footer-content__footer .footer-content__footer__list .footer-content__footer__list__provider ul .hide a {
+    padding-left: 0 !important;
+  }
+  .footer-content__footer .footer-content__footer__list .footer-content__footer__list__newfeeds {
+    text-align: left;
+  }
+  .footer-content__footer .footer-content__footer__list .footer-content__footer__list__newfeeds ul .hide a {
+    padding-left: 0 !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-content__info {
+    text-align: center;
+  }
+  .footer-content__footer .footer-content__footer__list .footer-content__footer__list__provider {
+    text-align: left !important;
+  }
+  .footer-content__footer .footer-content__footer__list .footer-content__footer__list__provider ul .hide a {
+    padding-left: 0 !important;
+  }
+  .footer-content__footer .footer-content__footer__list .footer-content__footer__list__newfeeds {
+    text-align: left;
+  }
+  .footer-content__footer .footer-content__footer__list .footer-content__footer__list__newfeeds ul .hide a {
+    padding-left: 0 !important;
+  }
+}
 /*# sourceMappingURL=main.css.map */

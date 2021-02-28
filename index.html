@@ -26,7 +26,7 @@
 <body>
 
   <!-- HEADER -->
-  <header class="container-fluid">
+  <header class="container-fluid" id="top">
     <div class="header-content">
       <div class="header-content-provider">
         <div class="header-content-nav__language">
@@ -49,7 +49,8 @@
             <img class="header-content-brand__logo" src="./images/logo.svg" alt="logo">
             <img class="header-content-brand__brand" src="./images/brand.svg" alt="brand">
           </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
@@ -209,10 +210,119 @@
   <section class="topics"></section>
 
   <!-- CONTACT -->
-  <section class="contact"></section>
+  <section class="contact container-fluid">
+    <div class="contact-content">
+      <h2>Stay informed</h2>
+      <hr>
+      <div class="contact-content__info col-12 col-xl-5 col-lg-12 col-md-12 col-sm-12">
+        <p>Follow us and use the following social media platforms to get in contact with us and to share your passion
+          for the brand, products and services of Mercedes-Benz.</p>
+        <div class="contact-content__info__icon">
+          <a href="#" class="icon__fb">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+      <hr>
+      <div class="contact-content__brand">
+        <div class="contact-content__brand__detail col-12 col-md-4">
+          <a href="#">
+            <img src="./images/logo_amg.svg" alt="">
+          </a>
+        </div>
+        <div class="contact-content__brand__detail col-12 col-md-4">
+          <a href="#">
+            <img src="./images/logo_daimler.svg" alt="">
+          </a>
+        </div>
+        <div class="contact-content__brand__detail col-12 col-md-4">
+          <a href="#">
+            <img src="./images/logo_smart.svg" alt="">
+          </a>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <hr>
+    </div>
+  </section>
 
   <!-- FOOTER -->
-  <footer></footer>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-content__info container-fluid">
+        <p>
+          This is the International website of Mercedes-Benz AG. Visitors from the U.S., please visit our U.S. website
+          <a href="#"> www.mbusa.com</a>.
+        </p>
+      </div>
+      <div class="space-huge"></div>
+      <div class="footer-content__footer">
+        <div class="footer-content__footer__language footer__float col-xl-2 col-lg-12">
+          <span>
+            <a href="#" class="default">Deutsch</a> |
+            <a href="#">English</a>
+          </span>
+        </div>
+        <div class="footer-content__footer__list footer__float col-xl-9 col-lg-12">
+          <div class="footer-content__footer__list__provider list__float col-xl-5 col-lg-12">
+            <ul>
+              <li class="hide">
+                <a href="#">Provider</a>
+              </li>
+              <li>
+                <a href="#">Legal Notice</a>
+              </li>
+              <li>
+                <a href="#">Cookies</a>
+              </li>
+              <li>
+                <a href="#">Privacy Statement</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-content__footer__list__newfeeds list__float col-xl-7 col-lg-12">
+            <ul>
+              <li class="hide">
+                <a href="#">Newsfeed (RSS)</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+              <li>
+                <a href="#">Careers</a>
+              </li>
+              <li>
+                <a href="#">Investor Relations</a>
+              </li>
+              <li>
+                <a href="#">Daimler AG</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-content__footer__top footer__float col-xl-1 col-lg-12">
+          <a href="#top">
+            <span>
+              Top
+              <i class="fa fa-chevron-up"></i>
+            </span>
+          </a>          
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
   <!-- JQUERY 3.5.1 -->
