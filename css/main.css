@@ -15,11 +15,6 @@ html, body {
   clear: both;
 }
 
-.category {
-  max-width: 1200px;
-  margin: 3rem auto;
-}
-
 .category .category__content .category__nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -217,10 +212,6 @@ html, body {
   width: 100%;
 }
 
-.description {
-  margin: 3rem 25px;
-}
-
 .description .description__content {
   color: #fff;
   font-size: 13px;
@@ -247,11 +238,6 @@ html, body {
 
 .description .description__content p {
   margin-bottom: 1rem;
-}
-
-.topics {
-  margin-right: 25px;
-  margin-left: 25px;
 }
 
 .topics .topics__content {
@@ -343,11 +329,13 @@ header .header-content .header-content-navbar .navbar-brand {
 }
 
 header .header-content .header-content-navbar .navbar-brand .header-content-brand__logo {
-  transform: translate(20%, -15%);
+  -webkit-transform: translate(20%, -15%);
+          transform: translate(20%, -15%);
 }
 
 header .header-content .header-content-navbar .navbar-brand .header-content-brand__brand {
-  transform: translate(60%, 5%);
+  -webkit-transform: translate(60%, 5%);
+          transform: translate(60%, 5%);
 }
 
 header .header-content .header-content-navbar .navbar-toggler {
@@ -392,12 +380,14 @@ header .header-content .header-content-navbar .collapse ul .navbar-nav__search {
   header .navbar-brand .header-content-brand__logo {
     width: 44px;
     height: 44px;
-    transform: translate(-50%, -25%) !important;
+    -webkit-transform: translate(-50%, -25%) !important;
+            transform: translate(-50%, -25%) !important;
   }
   header .navbar-brand .header-content-brand__brand {
     height: 23px;
     width: 91px;
-    transform: translate(15%, -20%) !important;
+    -webkit-transform: translate(15%, -20%) !important;
+            transform: translate(15%, -20%) !important;
   }
   header .collapse .navbar-nav .navbar-nav__search {
     margin: 0 auto !important;
@@ -437,7 +427,8 @@ header .header-content .header-content-navbar .collapse ul .navbar-nav__search {
 }
 
 .carousel .carousel-item .carousel-caption .carousel-caption__info {
-  transform: translateY(600%);
+  -webkit-transform: translateY(600%);
+          transform: translateY(600%);
   color: #fff;
   font-size: 13px;
   font-weight: normal;
@@ -626,9 +617,15 @@ header .header-content .header-content-navbar .collapse ul .navbar-nav__search {
 
 .contact .contact-content .contact-content__brand .contact-content__brand__detail {
   float: left;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .contact .contact-content .contact-content__brand .contact-content__brand__detail a {
