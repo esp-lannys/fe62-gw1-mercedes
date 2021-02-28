@@ -1,0 +1,33 @@
+.topics {
+    margin-right: $mg-2;
+    margin-left: $mg-2;
+    .topics__content {
+        margin: 0!important;
+        .topics__item {
+            margin: 0!important;
+            padding: 0!important;
+            .topics__headline {
+                @include text($color-white,2.42857rem,$fw-normal);
+            }
+
+            hr {
+                height: 1px;
+                background-color: $color-gray-1;
+                border: 0;
+                box-sizing: content-box;
+                margin: 30px -1px;
+                overflow: visible;
+            }
+
+            ul {
+                li {
+                    list-style: none;
+                    a {
+                        @include text($color-gray-1, $fs-1,$fw-normal);
+                        line-height: 22px;
+                    }
+                }
+            }
+        }
+    }
+}

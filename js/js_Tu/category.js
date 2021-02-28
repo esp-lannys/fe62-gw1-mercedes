@@ -1,7 +1,7 @@
 
 $(window).on("load",function() {
     function fade() {
-        var animation_height = $(window).innerHeight() * 0.5;
+        var animation_height = $(window).innerHeight() * 0.45;
         var ratio = Math.round( (1 / animation_height) * 10000 ) / 10000;
 
         $('.fade-scroll').each(function() {
@@ -12,7 +12,7 @@ $(window).on("load",function() {
             if ( objectTop < windowBottom ) {
                 if ( objectTop < windowBottom - animation_height ) {
                     $(this).css( {
-                        transition: 'opacity 0.5s linear',
+                        transition: 'opacity 0.8s linear',
                         opacity: 1
                     } );
 
